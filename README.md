@@ -1,3 +1,6 @@
+<img width="1440" alt="image" src="https://github.com/user-attachments/assets/026a1e34-9fd6-481a-9e77-e31f724ede47" />
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
