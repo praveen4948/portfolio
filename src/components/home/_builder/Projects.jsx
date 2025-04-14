@@ -3,16 +3,17 @@ import React, { useState } from "react";
 import project1 from "@/public/project1.jpeg";
 import project2 from "@/public/project2.png";
 import project3 from "@/public/project3.png";
+import project4 from "@/public/project4.png";
 import { CircleArrowRight } from "lucide-react";
 import Heading from "@/app/utils/Heading";
 
 const Card = ({ name, description, img, onClick }) => {
   return (
     <div
-      className="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 hover:rotate-1 transition duration-300 ease-in-out cursor-pointer bg-gradient-to-r from-blue-500 to-purple-600"
+      className="relative rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transform hover:scale-105 hover:rotate-1 transition duration-300 ease-in-out cursor-pointer bg-gradient-to-r from-blue-500 to-purple-600 min-h-[440px]"
       onClick={onClick}
       style={{
-        perspective: "1000px",
+        perspective: "100px",
       }}
     >
       <div
@@ -107,6 +108,18 @@ const Projects = () => {
         "Use ReactJS, NodeJS and MongoDB",
       ],
     },
+    {
+      name: "Bharat PG",
+      description: "A simple UI to show the details of the PG.",
+      img: project4,
+      descriptionList: [
+        "You can see the details of the PG.",
+        "User can see the list of all the rooms available in the PG.",
+        "User can see the list of all the facilities provided by the PG according to the room type.",
+        "user can see price of the room according to the room type.",
+        "Use ReactJS, NodeJS and MongoDB",
+      ],
+    },
   ];
 
   return (
@@ -114,7 +127,7 @@ const Projects = () => {
       <section id="projects" className="container mx-auto px-4 md:p-0">
         <Heading heading={"Projects"} textColor={"text-slate-300"} />
         <div className="flex justify-center w-full">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12 gap-y-8 mx-auto items-center justify-items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-x-12 gap-y-8 mx-auto items-center justify-items-center">
             {projects.map((project, index) => (
               <Card
                 key={index}
