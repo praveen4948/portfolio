@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -33,6 +34,28 @@ export const Footer = () => {
         </div>
       </div>
 
+      {/* Contact quick info */}
+      <div className="container mx-auto mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-gray-300">
+          <div className="flex items-center justify-center sm:justify-start gap-2">
+            <Mail size={18} className="text-amber-400" />
+            <a href="mailto:praveenmaurya.bst@gmail.com" className="hover:text-amber-300">
+              praveenmaurya.bst@gmail.com
+            </a>
+          </div>
+          <div className="flex items-center justify-center sm:justify-center gap-2">
+            <Phone size={18} className="text-amber-400" />
+            <a href="tel:+919910522955" className="hover:text-amber-300">
+              +91 63871 74968
+            </a>
+          </div>
+          <div className="flex items-center justify-center sm:justify-end gap-2">
+            <MapPin size={18} className="text-amber-400" />
+            <span>Sector-18 Grurgram</span>
+          </div>
+        </div>
+      </div>
+
       {/* Second Row - Social Media and Copyright */}
       <div className="mt-6 border-t border-gray-700 pt-4">
         <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center space-y-6 sm:space-y-0">
@@ -61,7 +84,7 @@ export const Footer = () => {
 
           {/* Right Side - Copyright */}
           <div className="text-gray-500 text-sm text-center sm:text-right">
-            &copy; {new Date().getFullYear()} Your Name. All rights reserved.
+            &copy; {new Date().getFullYear()} Praveen Maurya. All rights reserved.
           </div>
         </div>
       </div>
